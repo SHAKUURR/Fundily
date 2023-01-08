@@ -132,7 +132,7 @@ body {
     width: 80%;
 }
 
-/*.....HEADER-HERO.....*/
+/*.....ABOUT-US.....*/
 .about {
     padding: 0 8rem;
 }
@@ -174,4 +174,42 @@ body {
     font-size: 1.5rem;
     padding: 1.5rem 3rem;
     border-radius: .8rem;
+}
+
+/*.....FEATURES.....*/
+.features {
+    padding: 2rem 8rem;
+}
+
+.feature-heading {
+    font-size: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+.feature-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-box {
+   padding: 0;
+}
+
+.feature-box:not(:last-child) {
+    padding-right: 13rem;
+}
+
+.feature-image {
+    margin-bottom: 2rem;
+}
+
+.feature-secondary {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-paragraph {
+    font-size: 1.5rem;
+
 }
