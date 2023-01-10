@@ -7,28 +7,28 @@
 }
 
 html {
-    font-family: montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 62.5%;
 }
 
 body {
     box-sizing: border-box;
     background-color: #fff;
-    font-weight: 400;
-    line-height: 1.6;
+
 }
 
 /*.....NAVIGATION.....*/
 
 .nav-section {
     background-color: #fff;
+   
 }
 
 .nav-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5rem 8rem;
+    padding: 3.5rem 8rem;   
     
 }
 
@@ -44,24 +44,32 @@ body {
     list-style: none;
     margin-right: 3rem;
     font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-style: normal;
 }
 
 .nav-link {
-    color: #2f2e33;
+    color: #121933;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 1.6rem;
 }
 
 .nav-link-home {
-    color:#5e44ff;
-    font-weight: 300;
+    color:#5E44FF;
+    font-weight: 600;
+    font-size: 1.6rem;
+   
 }
 
 .nav-btn-text {
     font-size: 1.6rem;
-    color: #fff;
-    background-color: #5e44ff;
+    color: #FBFAFF;
+    background-color: #5E44FF;
+    font-weight: 500;
+    line-height: 2.4rem;
     padding: 1rem 2rem;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
 }
 
 /*.....HEADER-HERO.....*/
@@ -77,13 +85,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 8rem;
+    padding-bottom: 16rem;
 
 }
 
 .header-details {
     flex-basis: 60%;
-    padding-right: 15rem;
+    padding-right: 13rem;
     
     
 }
@@ -91,6 +99,7 @@ body {
 .heading {
     color: #121933;
     font-size: 4rem;
+    font-weight: 700;
     
     
 }
@@ -103,7 +112,7 @@ body {
     color: #2f2e33;
     font-size: 2rem;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 .header-btn-box {
@@ -112,7 +121,7 @@ body {
 
 .header-btn {
     color: #fff;
-    background-color: #121933;
+    background-color: #1F1755;
     padding: 1rem 5rem;
     border-radius: 1rem;
     font-size: 1.5rem;
@@ -135,6 +144,7 @@ body {
 /*.....ABOUT-US.....*/
 .about {
     padding: 0 8rem;
+    background-color: #FBFAFF;
 }
 
 .about-box {
@@ -160,29 +170,38 @@ body {
     font-size: 2.5rem;
     color: #5e44ff;
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .about-paragraph {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 4rem;
+    color: #2F2E33;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: justify;
 }
 
 .about-btn {
     text-decoration: none;
     background-color: #e9e5ff;
     color: #5e44ff;
-    font-size: 1.5rem;
-    padding: 1.5rem 3rem;
-    border-radius: .8rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1.2rem;
 }
 
 /*.....FEATURES.....*/
 .features {
-    padding: 2rem 8rem;
+    padding: 3rem 8rem;
+    background-color: #FBFAFF;
 }
 
 .feature-heading {
-    font-size: 2.5rem;
+    color: #121933;
+    font-size: 3.5rem;
+    font-weight: 700;
     margin-bottom: 8rem;
 }
 
@@ -197,7 +216,7 @@ body {
 }
 
 .feature-box:not(:last-child) {
-    padding-right: 13rem;
+    padding-right: 10rem;
 }
 
 .feature-image {
@@ -205,21 +224,26 @@ body {
 }
 
 .feature-secondary {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #4e4c55;
+    color: #121933;
+    font-weight: 500;
 }
 
 .feature-paragraph {
     font-size: 1.5rem;
-    color: #4e4c55;
+    color: #4E4C55;
+    font-weight: 500;
+    line-height: 2.7rem;
 
 }
 
 
 /*.....PAYMENT.....*/
 .payment {
-    padding: 15rem 8rem;
+    padding: 15rem 8rem 0rem 8rem;
+    background-color: #FBFAFF;
+    
 }
 
 .payment-heading {
@@ -227,6 +251,8 @@ body {
     font-size: 2.5rem;
     width: 40%;
     margin: auto;
+    color: #121933;
+    font-weight: 500;
 }
 
 .payment-box {
@@ -242,7 +268,7 @@ body {
 
 .payment-details {
     padding-top: .5rem;
-    width: 60%;
+    width: 50%;
 }
 
 .payment-details:not(:last-child) {
@@ -260,11 +286,16 @@ body {
 }
 
 .payment-secondary {
-   font-size: 1.6rem;
+   font-size: 2rem;
+   color: #121933;
+   font-weight: 500;
 }
 
 .payment-text {
     font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #4E4C55;
 }
 
 .payment-photo {
@@ -283,20 +314,24 @@ body {
     text-decoration: none;
     background-color: #e9e5ff;
     color: #5e44ff;
-    font-size: 1.5rem;
-    padding: 1.5rem 3rem;
-    border-radius: .8rem; 
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 1.5rem 3.5rem;
+    border-radius: 1.2rem;
 
 }
 
 /*.....WORK.....*/
 .work {
     padding: 15rem 8rem;
+    background-color: #FBFAFF;
 }
 
 .work-heading {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #121933;
     
 }
 
@@ -310,11 +345,13 @@ body {
 
 .work-details {
   padding-top: 8rem;
+  flex-basis: 40%;
 }
 
 .work-secondary {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
+    font-weight: 500;
 }
 
 .work-steps {
@@ -332,7 +369,8 @@ body {
 
 .work-paragraph {
     font-size: 1.5rem;
-    color: #2a2c37;
+    color: #2A2C37;
+    font-weight: 500;
 }
 
 .work-photo {
@@ -350,7 +388,7 @@ body {
 
 /*.....GROW.....*/
 .grow {
-    background-color: #121933;
+    background-color: #1F1755;
     color: #fff;
    
 }
@@ -369,17 +407,21 @@ body {
     
 }
 .grow-heading {
-    font-size: 3rem;
-    margin-bottom: 8rem;
+    font-size: 3.5rem;
+    margin-bottom: 10rem;
+    color: #FBFAFF;
+    font-weight: 700;
+    line-height: 5rem;
 }
 
 .grow-btn {
     text-decoration: none;
     background-color: #e9e5ff;
     color: #5e44ff;
-    font-size: 1.5rem;
-    padding: 1rem 3rem;
-    border-radius: .8rem; 
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 1.5rem 4rem;
+    border-radius: 1.2rem;
    
 }
 
@@ -389,35 +431,33 @@ body {
 
 /*.....FOOTER.....*/
 .footer {
-    margin-top: 15rem;
-    padding: 0 8rem;
+    
+    padding: 15rem 8rem 5rem 8rem;
+    
+    background-image: url(/img/footer.png);
+    background-position: center;
+    background-size: cover;
   
 }
 
 .footer-box {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-logo-box {
-
-}
-
-.footer-logo {
     
 }
 
+.footer-logo {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
 .footer-paragraph {
-
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    color: #121933;
+    font-weight: 500;
 }
 
-.footer-btn-box {
-
-}
-
-.footer-btn {
-
-}
 
 /*...menu...*/
 .menu-box {
@@ -425,17 +465,64 @@ body {
 }
 
 .menu-heading {
-
+    color: #1f1755;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
 }
 
 .menu-list {
     list-style: none;
 }
 
-.menu-item {
+.menu-item:not(:last-child) {
+    margin-bottom: 1rem;
 
 }
 
 .menu-link {
     text-decoration: none;
+    font-size: 1.5rem;
+    color:rgba(18, 25, 51, 0.8);
+    font-weight: 500;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    font-size: 1.3rem;
+    color: #121933;
+}
+
+.copyright-icon-box {
+
+}
+
+.copyright-icon {
+  
+  font-size: 1rem;
+}
+
+.copyright-link {
+    text-decoration: none;
+    color: #FBFAFF;
+    background-color: #121933;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.copyright-link:not(:last-child) {
+    margin-right: 1.3rem;
+}
+
+.btn {
+    margin-right: 1rem;
 }
