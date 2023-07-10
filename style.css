@@ -1,6 +1,6 @@
 *,
 *::after,
-*::before{
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,6 +9,7 @@
 html {
     font-family: Poppins, sans-serif;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,15 +25,22 @@ body {
 
 .nav-section {
     background-color: #fff;
-   
+    transition: all 300ms ease;
+}
+
+.nav-section.sticky {
+    background: #fff;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
 }
 
 .nav-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5rem 8rem;   
-    
+    padding: 3.5rem 8rem;
+
 }
 
 .nav-list {
@@ -40,7 +48,7 @@ body {
     align-items: center;
     justify-content: center;
     align-self: center;
-   
+
 }
 
 .nav-item {
@@ -59,10 +67,10 @@ body {
 }
 
 .nav-link-home {
-    color:#5E44FF;
+    color: #5E44FF;
     font-weight: 600;
     font-size: 1.6rem;
-   
+
 }
 
 .nav-btn-text {
@@ -73,6 +81,14 @@ body {
     line-height: 2.4rem;
     padding: 1rem 2rem;
     border-radius: 1.2rem;
+}
+
+#menu-icon {
+    display: none;
+    color: #1F1755;
+    z-index: 10001;
+    cursor: pointer;
+    font-size: 3rem;
 }
 
 /*.....HEADER-HERO.....*/
@@ -95,15 +111,15 @@ body {
 .header-details {
     flex-basis: 50%;
     padding-right: 12rem;
-   
+
 }
 
 .heading {
     color: #121933;
     font-size: 4rem;
     font-weight: 700;
-    
-    
+
+
 }
 
 .heading-span {
@@ -129,6 +145,7 @@ body {
     font-size: 1.5rem;
     text-decoration: none;
 }
+
 .header-btn:not(:last-child) {
     margin-right: 2rem;
 }
@@ -148,7 +165,7 @@ body {
 .about-box {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
 
 
@@ -207,7 +224,7 @@ body {
 }
 
 .feature-box {
-   padding: 0;
+    padding: 0;
 }
 
 .feature-box:not(:last-child) {
@@ -238,7 +255,7 @@ body {
 .payment {
     padding: 15rem 8rem 0rem 8rem;
     background-color: #FBFAFF;
-    
+
 }
 
 .payment-heading {
@@ -254,13 +271,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem; 
+    padding-top: 10rem;
     margin-bottom: 8rem;
 }
 
-.payment-details-box {
-    
-}
+
 
 .payment-details {
     padding-top: .5rem;
@@ -276,15 +291,16 @@ body {
     align-items: center;
     margin-bottom: 2rem;
 }
+
 .payment-icon {
-   margin-right: 2rem;
-   width: 8%;
+    margin-right: 2rem;
+    width: 8%;
 }
 
 .payment-secondary {
-   font-size: 2rem;
-   color: #121933;
-   font-weight: 500;
+    font-size: 2rem;
+    color: #121933;
+    font-weight: 500;
 }
 
 .payment-text {
@@ -299,7 +315,7 @@ body {
 .payment-image {
     width: 40%;
     height: auto;
-  
+
 }
 
 .payment-btn-box {
@@ -328,7 +344,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     color: #121933;
-    
+
 }
 
 .work-box {
@@ -336,12 +352,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
-    
+
+
 }
 
 .work-details {
-  flex-basis: 50%;
+    flex-basis: 50%;
 }
 
 .work-secondary {
@@ -358,6 +374,7 @@ body {
 .work-btn {
     margin-top: 4rem;
 }
+
 .work-steps:not(:last-child) {
     margin-bottom: 1rem;
 }
@@ -386,7 +403,7 @@ body {
 .grow {
     background-color: #1F1755;
     color: #fff;
-   
+
 }
 
 .grow-box {
@@ -400,8 +417,9 @@ body {
     padding-top: 7rem;
     padding-right: 10rem;
     flex-basis: 40%;
-    
+
 }
+
 .grow-heading {
     font-size: 3.5rem;
     margin-bottom: 10rem;
@@ -418,7 +436,7 @@ body {
     font-size: 1.4rem;
     padding: 1.5rem 4rem;
     border-radius: 1.2rem;
-   
+
 }
 
 .grow-img {
@@ -427,19 +445,19 @@ body {
 
 /*.....FOOTER.....*/
 .footer {
-    
+
     padding: 15rem 8rem 5rem 8rem;
-    
+
     background-image: url(/img/footer.png);
     background-position: center;
     background-size: cover;
-  
+
 }
 
 .footer-box {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .footer-logo {
@@ -456,9 +474,7 @@ body {
 
 
 /*...menu...*/
-.menu-box {
 
-}
 
 .menu-heading {
     color: #1f1755;
@@ -479,7 +495,7 @@ body {
 .menu-link {
     text-decoration: none;
     font-size: 1.5rem;
-    color:rgba(18, 25, 51, 0.8);
+    color: rgba(18, 25, 51, 0.8);
     font-weight: 500;
 }
 
@@ -491,13 +507,11 @@ body {
     color: #121933;
 }
 
-.copyright-icon-box {
 
-}
 
 .copyright-icon {
-  
-  font-size: 1rem;
+
+    font-size: 1rem;
 }
 
 .copyright-link {
@@ -525,158 +539,156 @@ body {
 
 
 
-.navigation{
+/* .navigation {}
+
+.checkbox {
+    display: none;
+
 }
 
-    .checkbox{
-        display: none;
-        
-    }
+.button {
+    background-color: #1F1755;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3rem;
+    right: 6rem;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(#000, .1);
+    text-align: center;
+    cursor: pointer;
+}
 
-    .button{
-        background-color: #1F1755;
-        height: 7rem;
-        width: 7rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 3rem;
-        right: 6rem;
-        z-index: 2000; 
-        box-shadow: 0 1rem 3rem rgba(#000, .1);
-        text-align: center;
-        cursor: pointer;
-    }
+.background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3.5rem;
+    right: 6.5rem;
+    background-color: #fff;
+    z-index: 1000;
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-    .background{
-        height: 6rem;
-        width: 6rem;
-        border-radius: 50%;
-        position: fixed;
-        top: 3.5rem;
-        right: 6.5rem;
-        background-color: #fff;
-        z-index: 1000;
-        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
-               
-    }
+}
 
-    .nav{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        z-index: 1500;
-        width: 0;
-        opacity: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        
-    }
+.nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1500;
+    width: 0;
+    opacity: 0;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    .list{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        text-align: center;
-        width: 100%;
-        
-    }
+}
 
-    .item{
-        margin: 1rem;
+.list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
 
-    }
+}
 
-    .link:link,
-    .link:visited{
-            font-size: 3rem;
-            font-weight: 300;
-            padding: 1rem 2rem;
-            display: inline-block;
-            color: #5E44FF;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-size: 225%;
-            transition: all .2s;
-        }
+.item {
+    margin: 1rem;
 
-        .link:hover,
-        .link:active{
-            background-position: 100%;
-            transform: translateX(1rem);
-            background-color: #86592d;
-            border-radius: .4rem;
-        }
-       
-    
-        .checkbox:checked ~ .background{
-            transform: scale(80);
-        }
-    
-        .checkbox:checked ~ .nav{
-            opacity: 1;
-            width: 100%;
-           
-        }
-    
-        //ICONS
-    
-        .icon{
-            position: relative;
-            margin-top: 3.5rem;}
-    
-            .icon,
-            .icon::before,
-            .icon::after{
-                margin-top: 3rem;
-                width: 3rem;
-                height: 2px;
-                background-color: #fff;
-                display: inline-block;
-            }
-        
-            .icon::before,
-            .icon::after{
-                content: "";
-                position: absolute;
-                left: 0;
-                transition: all .2s;
-            }
-    
-            .icon::before {
-                top: -.8rem;
-                margin-left: 2rem;
-            }
-    
-            .icon::after {
-                top: .8rem;
-                margin-left: 2rem;
-            }
-            
-        
-    
-        .button:hover .icon::before{
-            top: -1rem;
-        }
-    
-        .button:hover .icon::after{
-            top: 1rem;
-        }
-    
-        .checkbox:checked + .button .icon{
-            background-color: transparent; 
-        }
-    
-        .checkbox:checked + .button .icon::before {
-            top: 0;
-            transform: rotate(135deg); 
-        }
-    
-        .checkbox:checked + .button .icon::after {
-            top: 0;
-            transform: rotate(-135deg); 
-        }
-     
-        
+}
+
+.link:link,
+.link:visited {
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: #5E44FF;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-size: 225%;
+    transition: all .2s;
+}
+
+.link:hover,
+.link:active {
+    background-position: 100%;
+    transform: translateX(1rem);
+    background-color: #86592d;
+    border-radius: .4rem;
+}
+
+
+.checkbox:checked~.background {
+    transform: scale(80);
+}
+
+.checkbox:checked~.nav {
+    opacity: 1;
+    width: 100%;
+
+} */
+
+
+
+/* .icon {
+    position: relative;
+    margin-top: 3.5rem;
+}
+
+.icon,
+.icon::before,
+.icon::after {
+    margin-top: 3rem;
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.icon::before {
+    top: -.8rem;
+    margin-left: 2rem;
+}
+
+.icon::after {
+    top: .8rem;
+    margin-left: 2rem;
+}
+
+
+
+.button:hover .icon::before {
+    top: -1rem;
+}
+
+.button:hover .icon::after {
+    top: 1rem;
+}
+
+.checkbox:checked+.button .icon {
+    background-color: transparent;
+}
+
+.checkbox:checked+.button .icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.checkbox:checked+.button .icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+} */

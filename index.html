@@ -4,18 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="queries.css">
         <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
-
+        <script src="https://unpkg.com/scrollreveal"></script>
         <title>Fundily</title>
     </head>
 
     <body>
 
-        <div class="navigation">
+        <!-- <div class="navigation">
             <input type="checkbox" class="checkbox" id="navi-toggle">
             <label for="navi-toggle" class="button">
                 <span class="icon">&nbsp;</span>
@@ -32,47 +34,54 @@
                     
                 </ul>
             </nav>
-        </div>    
+        </div>     -->
 
         <nav class="nav-section">
             <div class="nav-box">
                 <img src="img/Logo 1.png" alt="logo" class="nav-logo">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link nav-link-home">Home</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link nav-link-home">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">FAQS</a></li>
+                    <div class="nav-btn">
+                        <p class="nav-btn-text">Join waitlist</p>
+                    </div>
                 </ul>
-                <div class="nav-btn">
-                    <p class="nav-btn-text">Join waitlist</p>
+                <div id="menu-icon" class="nav-link">
+                    <i class="fa-solid fa-bars fa-lg"></i>
                 </div>
             </div>
         </nav>
-        <header class="header">
+        <header class="header" id="home">
             <div class="header-box">
                 <div class="header-details">
                     <h1 class="heading">FUNDING becomes FUN on <span class="heading-span">FUNDILY</span></h1>
-                    <p class="header-text">Send and receive money at a GO. The only distance is your phone not your location.</p>
+                    <p class="header-text">Send and receive money at a GO. The only distance is your phone not your
+                        location.</p>
                     <div class="header-btn-box">
                         <a href="#" class="header-btn"><i class="fa-brands fa-apple btn"></i> App Store</a>
                         <a href="#" class="header-btn"><i class="fa-brands fa-google-play btn"></i> Play Store</a>
                     </div>
                 </div>
-               
-                    <img src="img/header.png"  class="header-image">
-                
+
+                <img src="img/header.png" class="header-image">
+
             </div>
         </header>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-box">
-                
-                    <img src="img/about.png" alt="about--photo" class="about-image">
-               
+
+                <img src="img/about.png" alt="about--photo" class="about-image">
+
                 <div class="about-details">
                     <h2 class="about-heading">WE are:</h2>
-                    <p class="about-paragraph">A digital payment platform that facilitates quick online transactions across
-                        West Africa. Fundily also ensures a reliable payment system between individuals and businesses. As 
-                        a Business to Consumer platform (B2C), and Business to Business (B2B), we offer a wide range of payment 
+                    <p class="about-paragraph">A digital payment platform that facilitates quick online transactions
+                        across
+                        West Africa. Fundily also ensures a reliable payment system between individuals and businesses.
+                        As
+                        a Business to Consumer platform (B2C), and Business to Business (B2B), we offer a wide range of
+                        payment
                         options for the growth of brands and individuals.
                     </p>
                     <a href="#" class="about-btn">Join Waitlist</a>
@@ -80,7 +89,7 @@
             </div>
         </section>
 
-        <section class="features">
+        <section class="features" id="career">
             <h2 class="feature-heading">You have nothing <br> to worry about!</h2>
             <div class="feature-details">
                 <div class="feature-box">
@@ -95,16 +104,18 @@
                     <img src="img/Low charges.png" alt="save" class="feature-image">
                     <h3 class="feature-secondary">Low Charges Rate</h3>
                     <p class="feature-paragraph">
-                        Heavy charges dey soft life. On Fundily, the higher the transaction you carry on your platform, the lower
-                        the charges. But, if you're carrying out a lower amount of transaction, there are no charges. 
+                        Heavy charges dey soft life. On Fundily, the higher the transaction you carry on your platform,
+                        the lower
+                        the charges. But, if you're carrying out a lower amount of transaction, there are no charges.
                     </p>
                 </div>
                 <div class="feature-box">
                     <img src="img/Invest.png" alt="save" class="feature-image">
                     <h3 class="feature-secondary">Invest</h3>
                     <p class="feature-paragraph">
-                       Investment is the sole of financial success. Believing in the credibility of this, our orgnaisation has 
-                       integrated an investment feature on our platform though it's yet to be launched. Anticipate!
+                        Investment is the sole of financial success. Believing in the credibility of this, our
+                        orgnaisation has
+                        integrated an investment feature on our platform though it's yet to be launched. Anticipate!
                     </p>
                 </div>
             </div>
@@ -119,8 +130,10 @@
                             <img src="img/Group 35899.png" class="payment-icon">
                             <h3 class="payment-secondary">Reliable Payment System</h3>
                         </div>
-                        <p class="payment-text">We understand tha problem no dey finish, but that doesn't happen on our platform. 
-                            You receive and send money in split seconds. You don't have to wait for hours or days before your transaction
+                        <p class="payment-text">We understand tha problem no dey finish, but that doesn't happen on our
+                            platform.
+                            You receive and send money in split seconds. You don't have to wait for hours or days before
+                            your transaction
                             will be completed. Our payment speed is faster than light.
                         </p>
                     </div>
@@ -129,24 +142,26 @@
                             <img src="img/Fast payment.png" class="payment-icon">
                             <h3 class="payment-secondary">Swift Transaction</h3>
                         </div>
-                        
-                        <p class="payment-text">We understand tha problem no dey finish, but that doesn't happen on our platform. 
-                            You receive and send money in split seconds. You don't have to wait for hours or days before your transaction
+
+                        <p class="payment-text">We understand tha problem no dey finish, but that doesn't happen on our
+                            platform.
+                            You receive and send money in split seconds. You don't have to wait for hours or days before
+                            your transaction
                             will be completed. Our payment speed is faster than light.
                         </p>
                     </div>
                 </div>
-               
-                
-                    <img src="img/payment.png" alt="payment" class="payment-image">
-                
+
+
+                <img src="img/payment.png" alt="payment" class="payment-image">
+
             </div>
             <div class="payment-btn-box">
                 <a href="#" class="payment-btn">Join Waitlist</a>
             </div>
         </section>
         <section class="work">
-            <h2  class="work-heading">How Fundily Works?</h2>
+            <h2 class="work-heading">How Fundily Works?</h2>
             <div class="work-box">
                 <div class="work-details">
                     <h3 class="work-secondary">For Businesses:</h3>
@@ -176,9 +191,9 @@
                         <a href="#" class="header-btn"><i class="fa-brands fa-google-play btn"></i> Play Store</a>
                     </div>
                 </div>
-                
-                    <img src="img/work.png" alt="work-steps" class="work-image">
-               
+
+                <img src="img/work.png" alt="work-steps" class="work-image">
+
             </div>
 
             <div class="work-box">
@@ -210,19 +225,19 @@
                         <a href="#" class="header-btn"><i class="fa-brands fa-google-play btn"></i> Play Store</a>
                     </div>
                 </div>
-                
-                    <img src="img/work-2.png" alt="work-steps" class="work-image">
-                
+
+                <img src="img/work-2.png" alt="work-steps" class="work-image">
+
             </div>
         </section>
 
         <section class="grow">
             <div class="grow-box">
-               <div class="grow-text">
+                <div class="grow-text">
                     <h2 class="grow-heading">Let's grow your business, together.</h2>
                     <a href="#" class="grow-btn">Join Waitlist</a>
-               </div>
-               <img src="img/grow.png" class="grow-img">
+                </div>
+                <img src="img/grow.png" class="grow-img">
             </div>
         </section>
         <footer class="footer">
@@ -238,8 +253,8 @@
                 <div class="menu-box">
                     <h3 class="menu-heading">Company</h3>
                     <ul class="menu-list">
-                        <li class="menu-item"><a href="#" class="menu-link">About Us</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Careers</a></li>
+                        <li class="menu-item"><a href="#about" class="menu-link">About Us</a></li>
+                        <li class="menu-item"><a href="#career" class="menu-link">Careers</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">Affliate Program</a></li>
                     </ul>
@@ -263,18 +278,20 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
                 <p class="copyright-text">&copy; Copyright 2022. All right reserved.</p>
                 <p class="copyright-term">Terms of Service | Privacy Policy</p>
                 <div class="copyright-icon-box">
                     <a href="#" class="copyright-link"><i class="fa-brands fa-facebook copyright-icon"></i></a>
-                    <a href="#" class="copyright-link"><i class="fa-brands fa-twitter copyright-icon"></i></a>
+                    <a href="https://twitter.com/braindesignss?s=20" class="copyright-link"><i
+                            class="fa-brands fa-twitter copyright-icon"></i></a>
                     <a href="#" class="copyright-link"><i class="fa-brands fa-linkedin-in copyright-icon"></i></i></a>
                     <a href="#" class="copyright-link"><i class="fa-brands fa-instagram copyright-icon"></i></a>
                 </div>
-               
+
             </div>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
